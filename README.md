@@ -13,7 +13,7 @@ Thanks for checking out this front-end coding challenge.
 ## Technology Stack
 
 React
-Saas
+TailWind CSS
 FlexBox
 Change style on the basis of viewport
 
