@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Card = (props) => {
     return (
-        <div className="bg-pink-400 w-44 h-32">
+        <div className="bg-pink-400 w-42 h-28 m-1 rounded-xl">
             {props.children}
         </div>
     )

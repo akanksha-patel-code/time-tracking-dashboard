@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export const Cards = (props) => {
-    return (
-        <div className="bg-yellow-400 h-72 w-11/12 grid grid-cols-2 -ml-52">
-            {props.children}
-        </div>
-    )
-}
+  return (
+    <div className=" h-72 w-full grid grid-cols-3 -ml-72">
+      {props.children}
+    </div>
+  );
+};

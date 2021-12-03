@@ -1,14 +1,25 @@
 import "./App.css";
-import { UserProfile, UserDetails, UserProfilePicture, UserName,
-  IntervalTypeFilter, IntervalTypeFilterItem} from "./components";
-
-  import { Cards, Card, CardIcon, CardDetails, CardTitle, CardOptionsIcon,
-    CardCurrentTrackedTime, CardPreviousTrackedTime } from "./components";
+import {
+  UserProfile,
+  UserDetails,
+  UserProfilePicture,
+  UserName,
+  IntervalTypeFilter,
+  IntervalTypeFilterItem,
+  Cards,
+  Card,
+  CardIcon,
+  CardDetails,
+  CardTitle,
+  CardOptionsIcon,
+  CardCurrentTrackedTime,
+  CardPreviousTrackedTime,
+} from "./components";
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-gray-900 p-20 grid grid-cols-2">
-      <UserProfile >
+    <div className="h-screen w-screen bg-gray-900 py-20 grid grid-cols-2">
+      <UserProfile>
         <UserDetails>
           <UserProfilePicture />
           <UserName />
@@ -19,17 +30,18 @@ function App() {
       </UserProfile>
 
       <Cards>
-        <Card>
-          <CardIcon />
-          <CardDetails>
-            <CardTitle />
-            <CardOptionsIcon />
-            <CardCurrentTrackedTime />
-            <CardPreviousTrackedTime />
-          </CardDetails>
-        </Card>
+        {[...Array(6)].map((x, i) => (
+          <Card>
+            <CardIcon />
+            <CardDetails>
+              <CardTitle />
+              <CardOptionsIcon />
+              <CardCurrentTrackedTime />
+              <CardPreviousTrackedTime />
+            </CardDetails>
+          </Card>
+        ))}
       </Cards>
-
     </div>
   );
 }
