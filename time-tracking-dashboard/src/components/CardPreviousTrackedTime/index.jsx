@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CardPreviousTrackedTime = () => {
     return (
-        <div className="text-xs text-gray-400 inline">
+        <div className="text-gray-400 inline font-thin font-body text-xs">
             Last Week - 36hrs
         </div>
     )
