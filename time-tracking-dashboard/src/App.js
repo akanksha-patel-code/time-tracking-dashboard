@@ -18,7 +18,7 @@ import {
 
 function App() {
   return (
-    <div className="h-full sm:h-screen w-screen bg-gray-900 py-20 sm:py-48 sm:px-20 sm:grid sm:grid-cols-2 flex flex-col">
+    <div className="h-full lg:h-screen w-screen bg-gray-900 py-20 lg:py-48 lg:px-20 lg:grid lg:grid-cols-2 flex flex-col">
       <UserProfile>
         <UserDetails>
           <UserProfilePicture />

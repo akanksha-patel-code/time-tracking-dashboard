@@ -2,7 +2,7 @@ import React from "react";
 
 export const Cards = (props) => {
   return (
-    <div className="sm:h-72 sm:w-4/5 sm:grid sm:grid-cols-3 sm:-ml-32 ml-8 pt-4 sm:pt-0 flex flex-col gap-8">
+    <div className="lg:h-72 lg:w-4/5 lg:grid lg:grid-cols-3 lg:-ml-32 ml-8 pt-4 lg:pt-0 flex flex-col gap-8">
       {props.children}
     </div>
   );
